@@ -5,11 +5,13 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
 
+import java.io.Serializable;
+
 @Data
 @ToString
 @NoArgsConstructor
 @AllArgsConstructor
-public class Location {
+public class LocationEvent implements Serializable {
     private Double latitude;
     private Double longitude;
 }
